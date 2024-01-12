@@ -43,15 +43,6 @@ public class Chapter11ArrayLists {
         // either way, nums remains unchanged
     }
 
-    public static void number8()    {
-        ArrayList<Object> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(list);
-        System.out.println(list);
-        // works with no problems yep
-    }
-
     public static void number6(ArrayList<Integer> nums) {
 
     }
@@ -65,8 +56,23 @@ public class Chapter11ArrayLists {
         }
     }
 
+    public static void number8()    {
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(list);
+        System.out.println(list);
+        // works with no problems yep
+    }
+
+    public static void number10(ArrayList<String> lst)   {
+
+    }
+
     public static void main(String[] args) {
         //number8();
+
+        // testing number7()
         String name1 = "Saydie";
         String name2 = "Thelma";
         String name3 = "Austyn-Jayne";
@@ -97,5 +103,15 @@ public class Chapter11ArrayLists {
         System.out.println("After removing items from names1");
         System.out.println("names1: " + names1);
         System.out.println("names2: " + names2);
+
+        // HERE'S THE OUTPUT
+        /*
+        Before removing any items from either list
+        names1: [Cletus, Bubba, Saydie, Thelma, Saydie, Gator]
+        names2: [Austyn-Jayne, Bubba, Austyn-Jayne, Thelma, Bubba, Bubba]
+        After removing items from names1
+        names1: [Cletus, Saydie, Saydie, Gator]
+        names2: [Austyn-Jayne, Bubba, Austyn-Jayne, Thelma, Bubba, Bubba]
+         */
     }
 }
