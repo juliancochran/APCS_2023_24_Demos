@@ -32,13 +32,15 @@ public class Chapter11ArrayLists {
     }
 
     public static void number5(ArrayList<Integer> nums) {
+        // this is one way to solve the problem
         ArrayList<Integer> newList = new ArrayList<>();
         for(Integer temp : nums)    {
             newList.add(0, temp);
         }
-
+        // this is another
         ArrayList<Integer> thing = new ArrayList<>(nums);
         Collections.reverse(thing);
+        // either way, nums remains unchanged
     }
 
     public static void number8()    {
